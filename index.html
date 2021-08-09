@@ -2,7 +2,7 @@
 <html>
 
   <body onload="load()">
-
+<h id="Heading">Welcome To Dstaps Chess</h>
     <!-- Made By David Stapleton-->
 
     <!--<div id="Whitebtns">
@@ -157,7 +157,9 @@
 
 
       }
-
+#Heading {
+	text-align: center;
+}
       .WP {
 
         color: White;
@@ -541,7 +543,24 @@
 			document.getElementById(87).innnerHTML = '';
 			document.getElementById(88).innnerHTML = '';
 			}
-		
+			function HBH1(){
+			load();
+			H1BH1 = !!document.getElementById(BH1 - 2 + 10);
+						H2BH1 = !!document.getElementById(BH1 - 2 - 10);
+									H3BH1 = !!document.getElementById(BH1 + 21);
+
+
+if (H1BH1 == true){
+			if (document.getElementById(BH1 - 2 + 10).innerHTML === ''){
+			document.getElementById(BH1 - 2 + 10).style.backgroundColor = "red";
+			}	}
+			if (H2BH1 == true){
+ if (document.getElementById(BH1 - 2 - 10).innerHTML === ''){
+			document.getElementById(BH1 - 2 - 10).style.backgroundColor = "red";
+			}	}
+		  
+			
+			}
 function clearcolor(){
   var Blackcolor = document.getElementsByClassName("Black");
 	  var Whitecolor = document.getElementsByClassName("White");
@@ -566,11 +585,22 @@ var colorwhite;
 
 
       function BH1Move() {
+			if (window.BH1S == 1){
 						reset();
-			
-				          window.BH1S = 1
+						if (window.turn == 2){
+				HBH1();
 }
+          window.BH1S = 2;
+}else if (window.BH1S == 2){
+reset();
+						if (window.turn == 2){
+						clearcolor();
 
+}
+				          window.BH1S = 1;
+
+}
+}
 
       function BH2Move() {
         reset();
