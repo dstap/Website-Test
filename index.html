@@ -2,7 +2,7 @@
 <html>
 
   <body onload="load()">
-<h id="Heading">Welcome To Dstaps Chess</h>
+<h1 id="Heading">Welcome To Dstaps Chess</h1>
     <!-- Made By David Stapleton-->
 
     <!--<div id="Whitebtns">
@@ -24,10 +24,12 @@
 		</div> -->
     <br>
     <br>
+		<div id="center">
 
     <div id="Bdead">
 
     </div>
+		
     <div id="Board">
       <div class="row" id="1">
         <div class="White" id="11" onClick="Location(this.id)"></div>
@@ -119,6 +121,8 @@
     <div id="Wdead">
 
     </div>
+				</div>
+
     <br>
     <br>
     <!---<div id="Blackbtns">
@@ -159,6 +163,7 @@
       }
 #Heading {
 	text-align: center;
+	
 }
       .WP {
 
@@ -169,7 +174,6 @@
         width: 50px;
         height: 50px;
         display: flex;
-        word-wrap: break-word;
 
       }
 
@@ -188,6 +192,7 @@
       #Bdead {
         width: 50px;
         height: 50px;
+
         display: flex;
 
 
@@ -221,10 +226,17 @@
         display: flex;
         font-size: 50px;
         text-align: center;
+				align-self: center;
+				margin: auto;
 
 
       }
+#center {
+	margin: auto;
+width: 60%;
+align-items: center;
 
+}
       html,
       body {
         height: 100%;
