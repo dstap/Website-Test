@@ -1,0 +1,1614 @@
+<!DOCTYPE HTML>
+<html>
+
+  <body onload="load()">
+
+    <!-- Made By David Stapleton-->
+
+    <!--<div id="Whitebtns">
+  
+		<button class="movebtn" onclick="Whitemove1()">
+      White move Left
+    </button>
+		  <button class="movebtn" onclick="Whitemove3()">
+      White move Backwards
+    </button>
+    
+		<button class="movebtn" onclick="Whitemove2()">
+      White move Right
+    </button>
+		<br>
+		 <button class="movebtn" onclick="Whitemove()">
+      White move Forward
+    </button>
+		</div> -->
+    <br>
+    <br>
+
+    <div id="Bdead">
+
+    </div>
+    <div id="Board">
+      <div class="row" id="1">
+        <div class="White" id="11" onClick="Location(this.id)"></div>
+        <div class="Black" id="12" onClick="Location(this.id)"></div>
+        <div class="White" id="13" onClick="Location(this.id)"></div>
+        <div class="Black" id="14" onClick="Location(this.id)"></div>
+        <div class="White" id="15" onClick="Location(this.id)"></div>
+        <div class="Black" id="16" onClick="Location(this.id)"></div>
+        <div class="White" id="17" onClick="Location(this.id)"></div>
+        <div class="Black" id="18" onClick="Location(this.id)"></div></div>
+      <div class="row" id="2">
+        <div class="Black" id="21" onClick="Location(this.id)"></div>
+        <div class="White" id="22" onClick="Location(this.id)"></div>
+        <div class="Black" id="23" onClick="Location(this.id)"></div>
+        <div class="White" id="24" onClick="Location(this.id)"></div>
+        <div class="Black" id="25" onClick="Location(this.id)"></div>
+        <div class="White" id="26" onClick="Location(this.id)"></div>
+        <div class="Black" id="27" onClick="Location(this.id)"></div>
+        <div class="White" id="28" onClick="Location(this.id)"></div>
+        </div>
+      <div class="row" id="3">
+        <div class="White" id="31" onClick="Location(this.id)"></div>
+        <div class="Black" id="32" onClick="Location(this.id)"></div>
+        <div class="White" id="33" onClick="Location(this.id)"></div>
+        <div class="Black" id="34" onClick="Location(this.id)"></div>
+        <div class="White" id="35" onClick="Location(this.id)"></div> 
+        <div class="Black" id="36" onClick="Location(this.id)"></div>
+        <div class="White" id="37" onClick="Location(this.id)"></div>
+        <div class="Black" id="38" onClick="Location(this.id)"></div>
+      </div>
+      <br>
+      <div class="row" id="4">
+        <div class="Black" id="41" onClick="Location(this.id)"></div>
+        <div class="White" id="42" onClick="Location(this.id)"></div>
+        <div class="Black" id="43" onClick="Location(this.id)"></div>
+        <div class="White" id="44" onClick="Location(this.id)"></div>
+        <div class="Black" id="45" onClick="Location(this.id)"></div>
+        <div class="White" id="46" onClick="Location(this.id)"></div>
+        <div class="Black" id="47" onClick="Location(this.id)"></div>
+        <div class="White" id="48" onClick="Location(this.id)"></div>
+      </div>
+      <br>
+      <div class="row" id="5">
+        <div class="White" id="51" onClick="Location(this.id)"></div>
+        <div class="Black" id="52" onClick="Location(this.id)"></div>
+        <div class="White" id="53" onClick="Location(this.id)"></div>
+        <div class="Black" id="54" onClick="Location(this.id)"></div>
+        <div class="White" id="55" onClick="Location(this.id)"></div>
+        <div class="Black" id="56" onClick="Location(this.id)"></div>
+        <div class="White" id="57" onClick="Location(this.id)"></div>
+        <div class="Black" id="58" onClick="Location(this.id)"></div>
+      </div>
+      <br>
+      <div class="row" id="6">
+        <div class="Black" id="61" onClick="Location(this.id)"></div>
+        <div class="White" id="62" onClick="Location(this.id)"></div>
+        <div class="Black" id="63" onClick="Location(this.id)"></div>
+        <div class="White" id="64" onClick="Location(this.id)"></div>
+        <div class="Black" id="65" onClick="Location(this.id)"></div>
+        <div class="White" id="66" onClick="Location(this.id)"></div>
+        <div class="Black" id="67" onClick="Location(this.id)"></div>
+        <div class="White" id="68" onClick="Location(this.id)"></div>
+      </div>
+      <br>
+      <div class="row" id="7">
+        <div class="White" id="71" onClick="Location(this.id)"></div>
+        <div class="Black" id="72" onClick="Location(this.id)"></div>
+        <div class="White" id="73" onClick="Location(this.id)"></div>
+        <div class="Black" id="74" onClick="Location(this.id)"></div>
+        <div class="White" id="75" onClick="Location(this.id)"></div>
+        <div class="Black" id="76" onClick="Location(this.id)"></div>
+        <div class="White" id="77" onClick="Location(this.id)"></div>
+        <div class="Black" id="78" onClick="Location(this.id)"></div>
+      </div>
+      <br>
+      <div class="row" id="8">
+        <div class="Black" id="81" onClick="Location(this.id)"></div>
+        <div class="White" id="82" onClick="Location(this.id)"></div>
+        <div class="Black" id="83" onClick="Location(this.id)"></div>
+        <div class="White" id="84" onClick="Location(this.id)"></div>
+        <div class="Black" id="85" onClick="Location(this.id)"></div>
+        <div class="White" id="86" onClick="Location(this.id)"></div>
+        <div class="Black" id="87" onClick="Location(this.id)"></div>
+        <div class="White" id="88" onClick="Location(this.id)"></div>
+      </div>
+    </div>
+
+
+    <div id="Wdead">
+
+    </div>
+    <br>
+    <br>
+    <!---<div id="Blackbtns">
+		<button class="movebtn" onclick="Blackmove()">
+      Black move Forward
+    </button>
+		<br>
+		<button class="movebtn" onclick="Blackmove2()">
+      Black move Left
+    </button>
+    <button class="movebtn" onclick="Blackmove3()">
+      Black move Backwards
+    </button>
+    <button class="movebtn" onclick="Blackmove1()">
+      Black move Right
+    </button>
+				</div> -->
+
+
+
+
+
+  </body>
+
+  <head>
+    <style>
+      .BP {
+        color: Black;
+      }
+
+      .movebtn {
+        border: Solid;
+        width: 20%;
+        height: 70%;
+        margin: 2.5px 0;
+
+
+      }
+
+      .WP {
+
+        color: White;
+      }
+
+      #Wdead {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        word-wrap: break-word;
+
+      }
+
+      #Whitebtns {
+        text-align: center;
+        width: 60%;
+        height: 10%;
+      }
+
+      #Blackbtns {
+        text-align: center;
+        width: 60%;
+        height: 10%;
+      }
+
+      #Bdead {
+        width: 50px;
+        height: 50px;
+        display: flex;
+
+
+      }
+
+      .White {
+        background-color: White;
+        width: 100%;
+
+        height: 12.5%;
+      }
+
+      .Black {
+        background-color: #D18B47;
+
+        width: 100%;
+        height: 12.5%;
+      }
+
+      .row {
+        height: 100%;
+        width: 12.5%;
+      }
+
+      #Board {
+        border-color: black;
+        border-style: solid;
+        border-width: 5px;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        font-size: 50px;
+        text-align: center;
+
+
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+    </style>
+    <script>
+      var highlight = 0;
+      var highlight2 = 0;
+
+      var WP1 = 12;
+      var WP2 = 22;
+      var WP3 = 32;
+      var WP4 = 42;
+      var WP5 = 52;
+      var WP6 = 62;
+      var WP7 = 72;
+      var WP8 = 82;
+      var WR1 = 11;
+      var WR2 = 81;
+      var WH1 = 21;
+      var WH2 = 71;
+      var WB1 = 31;
+      var WB2 = 61;
+      var WQ1 = 51;
+      var WK1 = 41;
+
+      var BP1 = 17;
+      var BP2 = 27;
+      var BP3 = 37;
+      var BP4 = 47;
+      var BP5 = 57;
+      var BP6 = 67;
+      var BP7 = 77;
+      var BP8 = 87;
+      var BR1 = 18;
+      var BR2 = 88;
+      var BH1 = 28;
+      var BH2 = 78;
+      var BB1 = 38;
+      var BB2 = 68;
+      var BQ1 = 58;
+      var BK1 = 48;
+
+      var BP1S = 1;
+      var BP2S = 1;
+      var BP3S = 1;
+      var BP4S = 1;
+      var BP5S = 1;
+      var BP6S = 1;
+      var BP7S = 1;
+      var BP8S = 1;
+
+      var BH1S = 1;
+      var BH2S = 1;
+      var BR1S = 1;
+      var BR2S = 1;
+      var BB1S = 1;
+      var BB2S = 1;
+      var BQ1S = 1;
+      var BK1S = 1;
+
+      var WP1S = 1;
+      var WP2S = 1;
+      var WP3S = 1;
+      var WP4S = 1;
+      var WP5S = 1;
+      var WP6S = 1;
+      var WP7S = 1;
+      var WP8S = 1;
+
+      var WH1S = 1;
+      var WH2S = 1;
+      var WR1S = 1;
+      var WR2S = 1;
+      var WB1S = 1;
+      var WB2S = 1;
+      var WQ1S = 1;
+      var WK1S = 1;
+
+      var turn = 1;
+      var selectedSquare = 11;
+
+
+
+      document.getElementById(BP1).innerHTML = '<img onclick="BP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP2).innerHTML = '<img onclick="BP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP3).innerHTML = '<img onclick="BP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP4).innerHTML = '<img onclick="BP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP5).innerHTML = '<img onclick="BP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP6).innerHTML = '<img onclick="BP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP7).innerHTML = '<img onclick="BP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BP8).innerHTML = '<img onclick="BP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+      document.getElementById(BR1).innerHTML = '<img onclick="BR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BR2).innerHTML = '<img onclick="BR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BH1).innerHTML = '<img onclick="BH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BH2).innerHTML = '<img onclick="BH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BB1).innerHTML = '<img onclick="BB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BB2).innerHTML = '<img onclick="BB2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BQ1).innerHTML = '<img onclick="BQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bQ.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(BK1).innerHTML = '<img onclick="BK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bK.png" alt="Pawn" width="100%" height="100%">';
+
+
+      document.getElementById(WP1).innerHTML = '<img onclick="WP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP2).innerHTML = '<img onclick="WP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP3).innerHTML = '<img onclick="WP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP4).innerHTML = '<img onclick="WP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP5).innerHTML = '<img onclick="WP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP6).innerHTML = '<img onclick="WP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP7).innerHTML = '<img onclick="WP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+      document.getElementById(WP8).innerHTML = '<img onclick="WP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+      document.getElementById(WR1).innerHTML = '<img onclick="WR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+      document.getElementById(WR2).innerHTML = '<img onclick="WR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+      document.getElementById(WH1).innerHTML = '<img onclick="WH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+      document.getElementById(WH2).innerHTML = '<img onclick="WH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+      document.getElementById(WB1).innerHTML = '<img onclick="WB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+      document.getElementById(WB2).innerHTML = '<img onclick="WB2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+      document.getElementById(WQ1).innerHTML = '<img onclick="WQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wQ.png" alt="Queen" width="100%" height="100%">';
+      document.getElementById(WK1).innerHTML = '<img onclick="WK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wK.png" alt="King" width="100%" height="100%">';
+
+
+      function Blackmove() {
+        if (window.BP1 != 11 && window.BP1 != 21 && window.BP1 != 31 && window.BP1 != 41 && window.BP1 != 51 && window.BP1 != 61 && window.BP1 != 71 && window.BP1 != 81 && window.BP1 !== "Bdead") {
+          refreshWhite1();
+          refreshBlack1();
+          window.BP1 = window.BP1 - 1;
+          CheckBlack1();
+          CheckWhite();
+          CheckWhite1();
+
+
+        }
+      }
+
+      function Blackmove1() {
+        if (window.BP1 != 81 && window.BP1 != 82 && window.BP1 != 83 && window.BP1 != 84 && window.BP1 != 85 && window.BP1 != 86 && window.BP1 != 87 && window.BP1 != 88 && window.BP1 !== "Bdead") {
+          refreshWhite1();
+          refreshBlack1();
+          window.BP1 = window.BP1 + 10;
+          CheckBlack1();
+          CheckWhite();
+          CheckWhite1();
+        }
+      }
+
+      function Blackmove2() {
+        if (window.BP1 != 11 && window.BP1 != 12 && window.BP1 != 13 && window.BP1 != 14 && window.BP1 != 15 && window.BP1 != 16 && window.BP1 != 17 && window.BP1 != 18 && window.BP1 !== "Bdead") {
+          refreshWhite1();
+          refreshBlack1();
+          window.BP1 = window.BP1 - 10;
+          CheckBlack1();
+          CheckWhite();
+          CheckWhite1();
+        }
+      }
+
+
+      function Blackmove3() {
+        if (window.BP1 != 18 && window.BP1 != 28 && window.BP1 != 38 && window.BP1 != 48 && window.BP1 != 58 && window.BP1 != 68 && window.BP1 != 78 && window.BP1 != 88 && window.BP1 !== "Bdead") {
+          refreshWhite1();
+          refreshBlack1();
+          window.BP1 = window.BP1 + 1;
+          CheckBlack1();
+          CheckWhite();
+          CheckWhite1();
+        }
+      }
+
+      function Whitemove() {
+        if (window.WP8 != 18 && window.WP8 != 28 && window.WP8 != 38 && window.WP8 != 48 && window.WP8 != 58 && window.WP8 != 68 && window.WP8 != 78 && window.WP8 != 88 && window.WP8 !== "Wdead") {
+          refreshBlack1();
+          refreshWhite1();
+          window.WP8 = window.WP8 + 1;
+          CheckWhite1();
+          CheckBlack();
+          CheckBlack1();
+        }
+      }
+
+      function Whitemove1() {
+        if (window.WP8 != 11 && window.WP8 != 12 && window.WP8 != 13 && window.WP8 != 14 && window.WP8 != 15 && window.WP8 != 16 && window.WP8 != 17 && window.WP8 != 18 && window.WP8 !== "Wdead") {
+          refreshBlack1();
+          refreshWhite1();
+          window.WP8 = window.WP8 - 10;
+          CheckWhite1();
+          CheckBlack();
+          CheckBlack1();
+        }
+      }
+
+      function Whitemove2() {
+        if (window.WP8 != 81 && window.WP8 != 82 && window.WP8 != 83 && window.WP8 != 84 && window.WP8 != 85 && window.WP8 != 86 && window.WP8 != 87 && window.WP8 != 88 && window.WP8 !== "Wdead") {
+          refreshWhite1();
+          refreshBlack1();
+          refreshWhite1();
+          window.WP8 = window.WP8 + 10;
+          CheckWhite1();
+          CheckBlack();
+          CheckBlack1();
+        }
+      }
+
+      function Whitemove3() {
+        if (window.WP8 != 11 && window.WP8 != 21 && window.WP8 != 31 && window.WP8 != 41 && window.WP8 != 51 && window.WP8 != 61 && window.WP8 != 71 && window.WP8 != 81 && window.WP8 !== "Wdead") {
+          refreshWhite1();
+          refreshBlack1();
+          refreshWhite1();
+          window.WP8 = window.WP8 - 1;
+          CheckWhite1();
+          CheckBlack();
+          CheckBlack1();
+        }
+      }
+
+      function blackmovep1() {
+        refreshWhite1();
+        refreshBlack1();
+      }
+
+      function blackmovep2() {
+
+        CheckBlack1();
+        CheckWhite();
+        CheckWhite1();
+        resetall();
+        window.turn = 1;
+				clearcolor();
+
+
+
+
+      }
+
+      function whitemovep1() {
+        refreshBlack1();
+        refreshWhite1();
+      }
+
+      function whitemovep2() {
+
+        CheckWhite1();
+        CheckBlack();
+        CheckBlack1();
+        resetall();
+        window.turn = 2;
+
+
+
+
+      }
+			function clearsquares(){
+			document.getElementById(11).innnerHTML = '';
+			document.getElementById(12).innnerHTML = '';
+			document.getElementById(13).innnerHTML = '';
+			document.getElementById(14).innnerHTML = '';
+			document.getElementById(15).innnerHTML = '';
+			document.getElementById(16).innnerHTML = '';
+			document.getElementById(17).innnerHTML = '';
+			document.getElementById(18).innnerHTML = '';
+		  document.getElementById(21).innnerHTML = '';
+			document.getElementById(22).innnerHTML = '';
+			document.getElementById(23).innnerHTML = '';
+			document.getElementById(24).innnerHTML = '';
+			document.getElementById(25).innnerHTML = '';
+			document.getElementById(26).innnerHTML = '';
+			document.getElementById(27).innnerHTML = '';
+			document.getElementById(28).innnerHTML = '';
+		  document.getElementById(31).innnerHTML = '';
+			document.getElementById(32).innnerHTML = '';
+			document.getElementById(33).innnerHTML = '';
+			document.getElementById(34).innnerHTML = '';
+			document.getElementById(35).innnerHTML = '';
+			document.getElementById(36).innnerHTML = '';
+			document.getElementById(37).innnerHTML = '';
+			document.getElementById(38).innnerHTML = '';
+	   	document.getElementById(41).innnerHTML = '';
+			document.getElementById(42).innnerHTML = '';
+			document.getElementById(43).innnerHTML = '';
+			document.getElementById(44).innnerHTML = '';
+			document.getElementById(45).innnerHTML = '';
+			document.getElementById(46).innnerHTML = '';
+			document.getElementById(47).innnerHTML = '';
+			document.getElementById(48).innnerHTML = '';		
+			document.getElementById(51).innnerHTML = '';
+			document.getElementById(52).innnerHTML = '';
+			document.getElementById(53).innnerHTML = '';
+			document.getElementById(54).innnerHTML = '';
+			document.getElementById(55).innnerHTML = '';
+			document.getElementById(56).innnerHTML = '';
+			document.getElementById(57).innnerHTML = '';
+			document.getElementById(58).innnerHTML = '';
+		  document.getElementById(61).innnerHTML = '';
+			document.getElementById(62).innnerHTML = '';
+			document.getElementById(63).innnerHTML = '';
+			document.getElementById(64).innnerHTML = '';
+			document.getElementById(65).innnerHTML = '';
+			document.getElementById(66).innnerHTML = '';
+			document.getElementById(67).innnerHTML = '';
+			document.getElementById(68).innnerHTML = '';
+			document.getElementById(71).innnerHTML = '';
+			document.getElementById(72).innnerHTML = '';
+			document.getElementById(73).innnerHTML = '';
+			document.getElementById(74).innnerHTML = '';
+			document.getElementById(75).innnerHTML = '';
+			document.getElementById(76).innnerHTML = '';
+			document.getElementById(77).innnerHTML = '';
+			document.getElementById(78).innnerHTML = '';
+			document.getElementById(81).innnerHTML = '';
+			document.getElementById(82).innnerHTML = '';
+			document.getElementById(83).innnerHTML = '';
+			document.getElementById(84).innnerHTML = '';
+			document.getElementById(85).innnerHTML = '';
+			document.getElementById(86).innnerHTML = '';
+			document.getElementById(87).innnerHTML = '';
+			document.getElementById(88).innnerHTML = '';
+			}
+		
+function clearcolor(){
+  var Blackcolor = document.getElementsByClassName("Black");
+	  var Whitecolor = document.getElementsByClassName("White");
+
+var colorwhite;
+  for (colorwhite = 0; colorwhite < Whitecolor.length; colorwhite++) {
+    Whitecolor[colorwhite].style.backgroundColor = "White";
+  }
+	var colorblack
+	  for (colorblack = 0; colorblack < Blackcolor.length; colorblack++) {
+    Blackcolor[colorblack].style.backgroundColor = "#D18B47";
+  }
+
+}
+      function blackturn() {
+        window.turn = 2;
+      }
+
+      function whiteturn() {
+        window.turn = 1;
+      }
+
+
+      function BH1Move() {
+						reset();
+			
+				          window.BH1S = 1
+}
+}
+
+      function BH2Move() {
+        reset();
+
+        window.BH2S = 2;
+
+      }
+
+      function BR1Move() {
+        reset();
+
+        window.BR1S = 2;
+      }
+
+      function BR2Move() {
+        reset();
+
+        window.BR2S = 2;
+      }
+
+      function BB1Move() {
+        reset();
+
+        window.BB1S = 2;
+      }
+
+      function BB2Move() {
+        reset();
+
+        window.BB2S = 2;
+      }
+
+      function BQ1Move() {
+        reset();
+
+        window.BQ1S = 2;
+      }
+
+      function BK1Move() {
+        reset();
+
+        window.BK1S = 2;
+      }
+
+      function BP1Move() {
+        reset();
+
+        window.BP1S = 2;
+      }
+
+      function BP2Move() {
+        reset();
+
+        window.BP2S = 2;
+      }
+
+      function BP3Move() {
+        reset();
+
+        window.BP3S = 2;
+      }
+
+      function BP4Move() {
+        reset();
+
+        window.BP4S = 2;
+      }
+
+      function BP5Move() {
+        reset();
+
+        window.BP5S = 2;
+      }
+
+      function BP6Move() {
+        reset();
+
+        window.BP6S = 2;
+      }
+
+      function BP7Move() {
+        reset();
+
+        window.BP7S = 2;
+      }
+
+      function BP8Move() {
+        reset();
+
+        window.BP8S = 2;
+      }
+
+
+
+      function WH1Move() {
+        resetw();
+        window.WH1S = 2;
+
+      }
+
+
+      function WH2Move() {
+        resetw();
+        window.WH2S = 2;
+
+
+      }
+
+      function WR1Move() {
+        resetw();
+
+        window.WR1S = 2;
+      }
+
+      function WR2Move() {
+        resetw();
+
+        window.WR2S = 2;
+      }
+
+      function WB1Move() {
+        resetw();
+
+        window.WB1S = 2;
+      }
+
+      function WB2Move() {
+        resetw();
+
+        window.WB2S = 2;
+      }
+
+      function WQ1Move() {
+        resetw();
+
+        window.WQ1S = 2;
+      }
+
+      function WK1Move() {
+        resetw();
+
+        window.WK1S = 2;
+      }
+
+      function WP1Move() {
+        resetw();
+
+        window.WP1S = 2;
+      }
+
+      function WP2Move() {
+        resetw();
+
+        window.WP2S = 2;
+      }
+
+      function WP3Move() {
+        resetw();
+
+        window.WP3S = 2;
+      }
+
+      function WP4Move() {
+        resetw();
+
+        window.WP4S = 2;
+      }
+
+      function WP5Move() {
+        resetw();
+
+        window.WP5S = 2;
+      }
+
+      function WP6Move() {
+        resetw();
+
+        window.WP6S = 2;
+      }
+
+      function WP7Move() {
+        resetw();
+
+        window.WP7S = 2;
+      }
+
+      function WP8Move() {
+        resetw();
+
+        window.WP8S = 2;
+      }
+
+
+function load(){
+clearsquares();
+RefreshWhite();
+RefreshBlack();
+
+}
+
+      function Location(clicked_id) {
+        if (window.turn == 2) {
+          selectedSquare = clicked_id;
+          if (selectedSquare != BH2 && selectedSquare != BH1 && selectedSquare != BB1 && selectedSquare != BB2 && selectedSquare != BR1 && selectedSquare != BR2 && selectedSquare != BQ1 && selectedSquare != BK1 && selectedSquare != BP1 && selectedSquare != BP2 && selectedSquare != BP3 && selectedSquare != BP4 && selectedSquare != BP5 && selectedSquare != BP6 && selectedSquare != BP7 && selectedSquare != BP8) {
+
+            if (window.BH1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BH1) {
+                blackmovep1();
+
+                BH1 = selectedSquare;
+                blackmovep2();
+                window.BH1S = 1;
+              }
+            }
+            if (window.BH2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BH2) {
+                blackmovep1();
+
+                BH2 = selectedSquare;
+                blackmovep2();
+
+                window.BH2S = 1;
+              }
+            }
+            if (window.BR1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BR1) {
+                blackmovep1();
+
+                BR1 = selectedSquare;
+                blackmovep2();
+                window.BR1S = 1;
+              }
+            }
+            if (window.BR2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BR2) {
+                blackmovep1();
+
+                BR2 = selectedSquare;
+                blackmovep2();
+                window.BR2S = 1;
+
+              }
+            }
+            if (window.BB1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BB1) {
+                blackmovep1();
+
+                BB1 = selectedSquare;
+                blackmovep2();
+                window.BB1S = 1;
+
+              }
+            }
+            if (window.BB2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BB2) {
+                blackmovep1();
+
+                BB2 = selectedSquare;
+                blackmovep2();
+                window.BB2S = 1;
+
+              }
+            }
+            if (window.BQ1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BQ1) {
+                blackmovep1();
+
+                BQ1 = selectedSquare;
+                blackmovep2();
+                window.BQ1S = 1;
+
+              }
+            }
+            if (window.BK1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BK1) {
+                blackmovep1();
+
+                BK1 = selectedSquare;
+                blackmovep2();
+                window.BK1S = 1;
+
+              }
+            }
+            if (window.BP1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP1) {
+                blackmovep1();
+
+                BP1 = selectedSquare;
+                blackmovep2();
+                window.BP1S = 1;
+
+              }
+            }
+            if (window.BP1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP1) {
+                blackmovep1();
+
+                BP1 = selectedSquare;
+                blackmovep2();
+                window.BP1S = 1;
+              }
+            }
+            if (window.BP2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP2) {
+                blackmovep1();
+
+                BP2 = selectedSquare;
+                blackmovep2();
+                window.BP2S = 1;
+              }
+            }
+            if (window.BP3S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP3) {
+                blackmovep1();
+
+                BP3 = selectedSquare;
+                blackmovep2();
+                window.BP3S = 1;
+              }
+            }
+            if (window.BP4S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP4) {
+                blackmovep1();
+
+                BP4 = selectedSquare;
+                blackmovep2();
+                window.BP4S = 1;
+              }
+            }
+            if (window.BP5S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP5) {
+                blackmovep1();
+
+                BP5 = selectedSquare;
+                blackmovep2();
+                window.BP5S = 1;
+              }
+            }
+            if (window.BP6S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP6) {
+                blackmovep1();
+
+                BP6 = selectedSquare;
+                blackmovep2();
+                window.BP6S = 1;
+              }
+            }
+            if (window.BP7S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP7) {
+                blackmovep1();
+
+                BP7 = selectedSquare;
+                blackmovep2();
+                window.BP7S = 1;
+              }
+            }
+            if (window.BP8S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != BP8) {
+                blackmovep1();
+
+                BP8 = selectedSquare;
+                blackmovep2();
+
+                window.BP8S = 1;
+              }
+            }
+
+          }
+        }
+
+        if (window.turn == 1) {
+          selectedSquare = clicked_id;
+          if (selectedSquare != WH2 && selectedSquare != WH1 && selectedSquare != WB1 && selectedSquare != WB2 && selectedSquare != WR1 && selectedSquare != WR2 && selectedSquare != WQ1 && selectedSquare != WK1 && selectedSquare != WP1 && selectedSquare != WP2 && selectedSquare != WP3 && selectedSquare != WP4 && selectedSquare != WP5 && selectedSquare != WP6 && selectedSquare != WP7 && selectedSquare != WP8) {
+
+
+            if (window.WH1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WH1) {
+                whitemovep1();
+
+                WH1 = selectedSquare;
+                whitemovep2();
+                window.WH1S = 1;
+
+              }
+            }
+            if (window.WH2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WH2) {
+                whitemovep1();
+
+                WH2 = selectedSquare;
+                whitemovep2();
+                window.WH2S = 1;
+              }
+            }
+            if (window.WR1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WR1) {
+                whitemovep1();
+
+                WR1 = selectedSquare;
+                whitemovep2();
+                window.WR1S = 1;
+              }
+            }
+            if (window.WR2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WR2) {
+                whitemovep1();
+
+                WR2 = selectedSquare;
+                whitemovep2();
+                window.WR2S = 1;
+              }
+            }
+            if (window.WB1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WB1) {
+                whitemovep1();
+
+                WB1 = selectedSquare;
+                whitemovep2();
+                window.WB1S = 1;
+              }
+            }
+            if (window.WB2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WB2) {
+                whitemovep1();
+
+                WB2 = selectedSquare;
+                whitemovep2();
+                window.WB2S = 1;
+              }
+            }
+            if (window.WQ1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WQ1) {
+                whitemovep1();
+
+                WQ1 = selectedSquare;
+                whitemovep2();
+                window.WQ1S = 1;
+              }
+            }
+            if (window.WK1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WK1) {
+                whitemovep1();
+
+                WK1 = selectedSquare;
+                whitemovep2();
+                window.WK1S = 1;
+              }
+            }
+            if (window.WP1S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP1) {
+                whitemovep1();
+
+                WP1 = selectedSquare;
+                whitemovep2();
+                window.WP1S = 1;
+              }
+            }
+            if (window.WP2S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP2) {
+                whitemovep1();
+
+                WP2 = selectedSquare;
+                whitemovep2();
+                window.WP2S = 1;
+              }
+            }
+            if (window.WP3S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP3) {
+                whitemovep1();
+
+                WP3 = selectedSquare;
+                whitemovep2();
+                window.WP3S = 1;
+              }
+            }
+            if (window.WP4S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP4) {
+                whitemovep1();
+
+                WP4 = selectedSquare;
+                whitemovep2();
+                window.WP4S = 1;
+              }
+            }
+            if (window.WP5S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP5) {
+                whitemovep1();
+
+                WP5 = selectedSquare;
+                whitemovep2();
+                window.WP5S = 1;
+              }
+            }
+            if (window.WP6S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP6) {
+                whitemovep1();
+
+                WP6 = selectedSquare;
+                whitemovep2();
+                window.WP6S = 1;
+              }
+            }
+            if (window.WP7S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP7) {
+                whitemovep1();
+
+                WP7 = selectedSquare;
+                whitemovep2();
+                window.WP7S = 1;
+              }
+            }
+            if (window.WP8S == 2) {
+              selectedSquare = clicked_id;
+              if (selectedSquare != WP8) {
+                whitemovep1();
+
+                WP8 = selectedSquare;
+                whitemovep2();
+                window.WP8S = 1;
+              }
+
+            }
+
+          }
+        }
+      }
+
+
+
+
+      function reset() {
+        window.BP1S = 1;
+        window.BP2S = 1;
+        window.BP3S = 1;
+        window.BP4S = 1;
+        window.BP5S = 1;
+        window.BP6S = 1;
+        window.BP7S = 1;
+        window.BP8S = 1;
+
+        window.BH1S = 1;
+        window.BH2S = 1;
+        window.BR1S = 1;
+        window.BR2S = 1;
+        window.BB1S = 1;
+        window.BB2S = 1;
+        window.BQ1S = 1;
+        window.BK1S = 1;
+}
+function resetw(){
+        window.WP1S = 1;
+        window.WP2S = 1;
+        window.WP3S = 1;
+        window.WP4S = 1;
+        window.WP5S = 1;
+        window.WP6S = 1;
+        window.WP7S = 1;
+        window.WP8S = 1;
+
+        window.WH1S = 1;
+        window.WH2S = 1;
+        window.WR1S = 1;
+        window.WR2S = 1;
+        window.WB1S = 1;
+        window.WB2S = 1;
+        window.WQ1S = 1;
+        window.WK1S = 1;
+
+
+
+
+      }
+			 function resetall() {
+        window.BP1S = 1;
+        window.BP2S = 1;
+        window.BP3S = 1;
+        window.BP4S = 1;
+        window.BP5S = 1;
+        window.BP6S = 1;
+        window.BP7S = 1;
+        window.BP8S = 1;
+
+        window.BH1S = 1;
+        window.BH2S = 1;
+        window.BR1S = 1;
+        window.BR2S = 1;
+        window.BB1S = 1;
+        window.BB2S = 1;
+        window.BQ1S = 1;
+        window.BK1S = 1;
+
+        window.WP1S = 1;
+        window.WP2S = 1;
+        window.WP3S = 1;
+        window.WP4S = 1;
+        window.WP5S = 1;
+        window.WP6S = 1;
+        window.WP7S = 1;
+        window.WP8S = 1;
+
+        window.WH1S = 1;
+        window.WH2S = 1;
+        window.WR1S = 1;
+        window.WR2S = 1;
+        window.WB1S = 1;
+        window.WB2S = 1;
+        window.WQ1S = 1;
+        window.WK1S = 1;
+
+
+
+
+      }
+
+      function refreshBlack1() {
+
+        document.getElementById(BP1).innerHTML = '';
+        document.getElementById(BP2).innerHTML = '';
+        document.getElementById(BP3).innerHTML = '';
+        document.getElementById(BP4).innerHTML = '';
+        document.getElementById(BP5).innerHTML = '';
+        document.getElementById(BP6).innerHTML = '';
+        document.getElementById(BP7).innerHTML = '';
+        document.getElementById(BP8).innerHTML = '';
+
+        document.getElementById(BR1).innerHTML = '';
+        document.getElementById(BR2).innerHTML = '';
+        document.getElementById(BH1).innerHTML = '';
+        document.getElementById(BH2).innerHTML = '';
+        document.getElementById(BB1).innerHTML = '';
+        document.getElementById(BB2).innerHTML = '';
+        document.getElementById(BQ1).innerHTML = '';
+        document.getElementById(BK1).innerHTML = '';
+      }
+
+      function refreshWhite1() {
+
+        document.getElementById(WP1).innerHTML = '';
+        document.getElementById(WP2).innerHTML = '';
+        document.getElementById(WP3).innerHTML = '';
+        document.getElementById(WP4).innerHTML = '';
+        document.getElementById(WP5).innerHTML = '';
+        document.getElementById(WP6).innerHTML = '';
+        document.getElementById(WP7).innerHTML = '';
+        document.getElementById(WP8).innerHTML = '';
+
+        document.getElementById(WR1).innerHTML = '';
+        document.getElementById(WR2).innerHTML = '';
+        document.getElementById(WH1).innerHTML = '';
+        document.getElementById(WH2).innerHTML = '';
+        document.getElementById(WB1).innerHTML = '';
+        document.getElementById(WB2).innerHTML = '';
+        document.getElementById(WQ1).innerHTML = '';
+        document.getElementById(WK1).innerHTML = '';
+      }
+
+      function CheckWhite1() {
+        if (WP1 !== "Wdead") {
+          document.getElementById(WP1).innerHTML = '<img onclick="WP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP1 === "Wdead") {
+          document.getElementById(WP1).innerHTML = document.getElementById(WP1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        }
+        if (WP2 !== "Wdead") {
+          document.getElementById(WP2).innerHTML = '<img onclick="WP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP2 === "Wdead") {
+          document.getElementById(WP2).innerHTML = document.getElementById(WP2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP3 !== "Wdead") {
+          document.getElementById(WP3).innerHTML = '<img onclick="WP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP3 === "Wdead") {
+          document.getElementById(WP3).innerHTML = document.getElementById(WP3).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP4 !== "Wdead") {
+          document.getElementById(WP4).innerHTML = '<img onclick="WP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP4 === "Wdead") {
+          document.getElementById(WP4).innerHTML = document.getElementById(WP4).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP5 !== "Wdead") {
+          document.getElementById(WP5).innerHTML = '<img onclick="WP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP5 === "Wdead") {
+          document.getElementById(WP5).innerHTML = document.getElementById(WP5).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP6 !== "Wdead") {
+          document.getElementById(WP6).innerHTML = '<img onclick="WP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP6 === "Wdead") {
+          document.getElementById(WP6).innerHTML = document.getElementById(WP6).innerHTML + '<img onclick="WP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP7 !== "Wdead") {
+          document.getElementById(WP7).innerHTML = '<img onclick="WP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP7 === "Wdead") {
+          document.getElementById(WP7).innerHTML = document.getElementById(WP7).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WP8 !== "Wdead") {
+          document.getElementById(WP8).innerHTML = '<img onclick="WP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (WP8 === "Wdead") {
+          document.getElementById(WP8).innerHTML = document.getElementById(WP8).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (WR1 !== "Wdead") {
+          document.getElementById(WR1).innerHTML = '<img onclick="WR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+        } else if (WR1 === "Wdead") {
+          document.getElementById(WR1).innerHTML = document.getElementById(WR1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+
+        }
+        if (WR2 !== "Wdead") {
+          document.getElementById(WR2).innerHTML = '<img onclick="WR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+        } else if (WR2 === "Wdead") {
+          document.getElementById(WR2).innerHTML = document.getElementById(WR2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+
+        }
+        if (WH1 !== "Wdead") {
+          document.getElementById(WH1).innerHTML = '<img onclick="WH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+        } else if (WH1 === "Wdead") {
+          document.getElementById(WH1).innerHTML = document.getElementById(WH1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+
+        }
+        if (WH2 !== "Wdead") {
+          document.getElementById(WH2).innerHTML = '<img onclick="WH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+        } else if (WH2 === "Wdead") {
+          document.getElementById(WH2).innerHTML = document.getElementById(WH2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+
+        }
+        if (WB1 !== "Wdead") {
+          document.getElementById(WB1).innerHTML = '<img onclick="WB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+        } else if (WB1 === "Wdead") {
+          document.getElementById(WB1).innerHTML = document.getElementById(WB1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+
+        }
+        if (WB2 !== "Wdead") {
+          document.getElementById(WB2).innerHTML = '<img onclick="WB2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+        } else if (WB2 === "Wdead") {
+          document.getElementById(WB2).innerHTML = document.getElementById(WB2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+          Window.WDP += 1;
+
+        }
+        if (WQ1 !== "Wdead") {
+          document.getElementById(WQ1).innerHTML = '<img onclick="WQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wQ.png" alt="Queen" width="100%" height="100%">';
+        } else if (WQ1 === "Wdead") {
+          document.getElementById(WQ1).innerHTML = document.getElementById(WQ1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wQ.png" alt="Queen" width="100%" height="100%">';
+
+        }
+        if (WK1 !== "Wdead") {
+          document.getElementById(WK1).innerHTML = '<img onclick="WK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wK.png" alt="King" width="100%" height="100%">';
+        } else if (WK1 === "Wdead") {
+          document.getElementById(WK1).innerHTML = document.getElementById(WK1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/wK.png" alt="King" width="100%" height="100%">';
+
+        }
+
+      }
+
+      function CheckWhite() {
+        if (document.getElementById(WP1).innerHTML !== '' && WP1 !== "Wdead") {
+          WP1 = "Wdead";
+        }
+        if (document.getElementById(WP2).innerHTML !== '' && WP2 !== "Wdead") {
+          WP2 = "Wdead";
+        }
+        if (document.getElementById(WP3).innerHTML !== '' && WP3 !== "Wdead") {
+          WP3 = "Wdead";
+        }
+        if (document.getElementById(WP4).innerHTML !== '' && WP4 !== "Wdead") {
+          WP4 = "Wdead";
+        }
+        if (document.getElementById(WP5).innerHTML !== '' && WP5 !== "Wdead") {
+          WP5 = "Wdead";
+        }
+        if (document.getElementById(WP6).innerHTML !== '' && WP6 !== "dead") {
+          WP6 = "Wdead";
+        }
+        if (document.getElementById(WP7).innerHTML !== '' && WP7 !== "Wdead") {
+          WP7 = "Wdead";
+        }
+        if (document.getElementById(WP8).innerHTML !== '' && WP8 !== "Wdead") {
+          WP8 = "Wdead";
+        }
+        if (document.getElementById(WR1).innerHTML !== '' && WR1 !== "Wdead") {
+          WR1 = "Wdead";
+
+        }
+        if (document.getElementById(WR2).innerHTML !== '' && WR2 !== "Wdead") {
+          WR2 = "Wdead";
+        }
+        if (document.getElementById(WH1).innerHTML !== '' && WH1 !== "Wdead") {
+          WH1 = "Wdead";
+        }
+        if (document.getElementById(WH2).innerHTML !== '' && WH2 !== "Wdead") {
+          WH2 = "Wdead";
+        }
+        if (document.getElementById(WB1).innerHTML !== '' && WB1 !== "Wdead") {
+          WB1 = "Wdead";
+        }
+        if (document.getElementById(WB2).innerHTML !== '' && WB2 !== "Wdead") {
+          WB2 = "Wdead";
+        }
+        if (document.getElementById(WQ1).innerHTML !== '' && WQ1 !== "Wdead") {
+          WQ1 = "Wdead";
+        }
+        if (document.getElementById(WK1).innerHTML !== '' && WK1 !== "Wdead") {
+          WK1 = "Wdead";
+        }
+      }
+
+      function CheckBlack1() {
+        if (BP1 !== "Bdead") {
+          document.getElementById(BP1).innerHTML = '<img onclick="BP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP1 === "Bdead") {
+          document.getElementById(BP1).innerHTML = document.getElementById(BP1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP2 !== "Bdead") {
+          document.getElementById(BP2).innerHTML = '<img onclick="BP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP2 === "Bdead") {
+          document.getElementById(BP2).innerHTML = document.getElementById(BP2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP3 !== "Bdead") {
+          document.getElementById(BP3).innerHTML = '<img onclick="BP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP3 === "Bdead") {
+          document.getElementById(BP3).innerHTML = document.getElementById(BP3).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP4 !== "Bdead") {
+          document.getElementById(BP4).innerHTML = '<img onclick="BP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP4 === "Bdead") {
+          document.getElementById(BP4).innerHTML = document.getElementById(BP4).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP5 !== "Bdead") {
+          document.getElementById(BP5).innerHTML = '<img onclick="BP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP5 === "Bdead") {
+          document.getElementById(BP5).innerHTML = document.getElementById(BP5).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP6 !== "Bdead") {
+          document.getElementById(BP6).innerHTML = '<img onclick="BP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP6 === "Bdead") {
+          document.getElementById(BP6).innerHTML = document.getElementById(BP6).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP7 !== "Bdead") {
+          document.getElementById(BP7).innerHTML = '<img onclick="BP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP7 === "Bdead") {
+          document.getElementById(BP7).innerHTML = document.getElementById(BP7).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BP8 !== "Bdead") {
+          document.getElementById(BP8).innerHTML = '<img onclick="BP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BP8 === "Bdead") {
+          document.getElementById(BP8).innerHTML = document.getElementById(BP8).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        }
+        if (BR1 !== "Bdead") {
+          document.getElementById(BR1).innerHTML = '<img onclick="BR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Rook" width="100%" height="100%">';
+        } else if (BR1 === "Bdead") {
+          document.getElementById(BR1).innerHTML = document.getElementById(BR1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Rook" width="100%" height="100%">';
+
+        }
+        if (BR2 !== "Bdead") {
+          document.getElementById(BR2).innerHTML = '<img onclick="BR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Rook" width="100%" height="100%">';
+        } else if (BR2 === "Bdead") {
+          document.getElementById(BR2).innerHTML = document.getElementById(BR2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Rook" width="100%" height="100%">';
+
+        }
+        if (BH1 !== "Bdead") {
+          document.getElementById(BH1).innerHTML = '<img onclick="BH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Pawn" width="100%" height="100%">';
+        } else if (BH1 === "Bdead") {
+          document.getElementById(BH1).innerHTML = document.getElementById(BH1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Knight" width="100%" height="100%">';
+
+        }
+        if (BH2 !== "Bdead") {
+          document.getElementById(BH2).innerHTML = '<img onclick="BH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Knight" width="100%" height="100%">';
+        } else if (BH2 === "Bdead") {
+          document.getElementById(BH2).innerHTML = document.getElementById(BH2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Knight" width="100%" height="100%">';
+
+        }
+        if (BB1 !== "Bdead") {
+          document.getElementById(BB1).innerHTML = '<img onclick="BB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Bishop" width="100%" height="100%">';
+        } else if (BB1 === "Bdead") {
+          document.getElementById(BB1).innerHTML = document.getElementById(BB1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Bishop" width="100%" height="100%">';
+
+        }
+        if (BB2 !== "Bdead") {
+          document.getElementById(BB2).innerHTML = '<img onclick="BB2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Bishop" width="100%" height="100%">';
+        } else if (BB2 === "Bdead") {
+          document.getElementById(BB2).innerHTML = document.getElementById(BB2).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Bishop" width="100%" height="100%">';
+
+        }
+        if (BQ1 !== "Bdead") {
+          document.getElementById(BQ1).innerHTML = '<img onclick="BQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bQ.png" alt="Queen" width="100%" height="100%">';
+        } else if (BQ1 === "Bdead") {
+          document.getElementById(BQ1).innerHTML = document.getElementById(BQ1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bQ.png" alt="Queen" width="100%" height="100%">';
+
+        }
+        if (BK1 !== "Bdead") {
+          document.getElementById(BK1).innerHTML = '<img onclick="BK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bK.png" alt="King" width="100%" height="100%">';
+        } else if (BK1 === "Bdead") {
+          document.getElementById(BK1).innerHTML = document.getElementById(BK1).innerHTML + '<img src="https://chessboardjs.com/img/chesspieces/wikipedia/bK.png" alt="King" width="100%" height="100%">';
+
+        }
+      }
+
+      function CheckBlack() {
+        if (document.getElementById(BP1).innerHTML !== '' && BP1 !== "Bdead") {
+          BP1 = "Bdead";
+        }
+        if (document.getElementById(BP2).innerHTML !== '' && BP2 !== "Bdead") {
+          BP2 = "Bdead";
+        }
+        if (document.getElementById(BP3).innerHTML !== '' && BP3 !== "Bdead") {
+          BP3 = "Bdead";
+        }
+        if (document.getElementById(BP4).innerHTML !== '' && BP4 !== "Bdead") {
+          BP4 = "Bdead";
+        }
+        if (document.getElementById(BP5).innerHTML !== '' && BP5 !== "Bdead") {
+          BP5 = "Bdead";
+        }
+        if (document.getElementById(BP6).innerHTML !== '' && BP6 !== "dead") {
+          BP6 = "Bdead";
+        }
+        if (document.getElementById(BP7).innerHTML !== '' && BP7 !== "Bdead") {
+          BP7 = "Bdead";
+        }
+        if (document.getElementById(BP8).innerHTML !== '' && BP8 !== "Bdead") {
+          BP8 = "Bdead";
+        }
+        if (document.getElementById(BR1).innerHTML !== '' && BR1 !== "Bdead") {
+          BR1 = "Bdead";
+
+        }
+        if (document.getElementById(BR2).innerHTML !== '' && BR2 !== "Bdead") {
+          BR2 = "Bdead";
+        }
+        if (document.getElementById(BH1).innerHTML !== '' && BH1 !== "Bdead") {
+          BH1 = "Bdead";
+        }
+        if (document.getElementById(BH2).innerHTML !== '' && BH2 !== "Bdead") {
+          BH2 = "Bdead";
+        }
+        if (document.getElementById(BB1).innerHTML !== '' && BB1 !== "Bdead") {
+          BB1 = "Bdead";
+        }
+        if (document.getElementById(BB2).innerHTML !== '' && BB2 !== "Bdead") {
+          BB2 = "Bdead";
+        }
+        if (document.getElementById(BQ1).innerHTML !== '' && BQ1 !== "Bdead") {
+          BQ1 = "Bdead";
+        }
+        if (document.getElementById(BK1).innerHTML !== '' && BK1 !== "Bdead") {
+          BK1 = "Bdead";
+        }
+      }
+
+
+      function RefreshWhite() {
+        document.getElementById(WP1).innerHTML = '<img onclick="WP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP2).innerHTML = '<img onclick="WP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP3).innerHTML = '<img onclick="WP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP4).innerHTML = '<img onclick="WP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP5).innerHTML = '<img onclick="WP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP6).innerHTML = '<img onclick="WP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP7).innerHTML = '<img onclick="WP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(WP8).innerHTML = '<img onclick="WP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wP.png" alt="Pawn" width="100%" height="100%">';
+				
+        document.getElementById(WR1).innerHTML = '<img onclick="WR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+        document.getElementById(WR2).innerHTML = '<img onclick="WR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wR.png" alt="Rook" width="100%" height="100%">';
+        document.getElementById(WH1).innerHTML = '<img onclick="WH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+        document.getElementById(WH2).innerHTML = '<img onclick="WH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wN.png" alt="Knight" width="100%" height="100%">';
+        document.getElementById(WB1).innerHTML = '<img onclick="WB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+        document.getElementById(WB2).innerHTML = '<img onclick="WB2Move()"  src="https://chessboardjs.com/img/chesspieces/wikipedia/wB.png" alt="Bishop" width="100%" height="100%">';
+        document.getElementById(WQ1).innerHTML = '<img onclick="WQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wQ.png" alt="Queen" width="100%" height="100%">';
+        document.getElementById(WK1).innerHTML = '<img onclick="WK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/wK.png" alt="King" width="100%" height="100%">';
+      }
+
+      function RefreshBlack() {
+
+        document.getElementById(BP1).innerHTML = '<img onclick="BP1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP2).innerHTML = '<img onclick="BP2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP3).innerHTML = '<img onclick="BP3Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP4).innerHTML = '<img onclick="BP4Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP5).innerHTML = '<img onclick="BP5Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP6).innerHTML = '<img onclick="BP6Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP7).innerHTML = '<img onclick="BP7Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BP8).innerHTML = '<img onclick="BP8Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bP.png" alt="Pawn" width="100%" height="100%">';
+
+        document.getElementById(BR1).innerHTML = '<img onclick="BR1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BR2).innerHTML = '<img onclick="BR2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bR.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BH1).innerHTML = '<img onclick="BH1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BH2).innerHTML = '<img onclick="BH2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bN.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BB1).innerHTML = '<img onclick="BB1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BB2).innerHTML = '<img onclick="BB2Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bB.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BQ1).innerHTML = '<img onclick="BQ1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bQ.png" alt="Pawn" width="100%" height="100%">';
+        document.getElementById(BK1).innerHTML = '<img onclick="BK1Move()" src="https://chessboardjs.com/img/chesspieces/wikipedia/bK.png" alt="Pawn" width="100%" height="100%">';
+
+      }
+
+    </script>
+  </head>
+
+</html>
+
+
+
